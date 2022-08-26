@@ -1,0 +1,161 @@
+Type for VAR is 5 
+Type for VAR is 5 
+
+        LABEL           Offset   LEVEL
+        _t4             16              2
+        _t3             15              2
+        _t2             14              2
+        _t1             13              2
+        _t0             12              2
+        x               2               2
+        y               1               1
+        b               0               1
+        f               0               0
+        y               100             0
+        Z               0               0
+Type for VAR is 5 
+Type for VAR is 5 
+
+        LABEL           Offset   LEVEL
+        _t9             16              2
+        _t8             15              2
+        _t7             14              2
+        _t6             13              2
+        _t5             12              2
+        x               2               2
+        y               1               1
+        b               0               1
+        f               0               0
+        y               100             0
+        Z               0               0
+
+        LABEL           Offset   LEVEL
+        y               1               1
+        b               0               1
+        f               0               0
+        y               100             0
+        Z               0               0
+Type for VAR is 5 
+Type for VAR is 5 
+Type for VAR is 5 
+Type for VAR is 5 
+Type for VAR is 5 
+Type for VAR is 5 
+
+        LABEL           Offset   LEVEL
+        _t17            9               1
+        _t16            8               1
+        _t15            7               1
+        _t14            6               1
+        _t13            5               1
+        _t12            4               1
+        _t11            3               1
+        _t10            2               1
+        arg2            1               1
+        arg1            0               1
+        main            0               0
+        z               101             0
+        f               0               0
+        y               100             0
+        Z               0               0
+The input has been syntactically checked 
+Main symbol table START 
+
+        LABEL           Offset   LEVEL
+        main            0               0
+        z               101             0
+        f               0               0
+        y               100             0
+        Z               0               0
+Main symbol table END 
+Variable INT  y
+Variable INT  Z[100]
+INT FUNCTION 
+( 
+  PARAMETER  INT  b 
+) 
+  BLOCK STATEMENT  
+   Variable INT  y
+   BLOCK STATEMENT  
+    Variable INT  x[10]
+    ASSIGNMENT STATEMENT 
+     IDENTIFIER x 
+     array reference [ 
+      EXPR  - 
+       EXPR  + 
+        NUMBER with value 2
+        NUMBER with value 3
+       NUMBER with value 5
+     ] end array 
+     EXPR  + 
+      IDENTIFIER b 
+      CALL: f 
+       ARGLIST 
+        EXPR  + 
+         NUMBER with value 5
+         EXPR  * 
+          IDENTIFIER x 
+          array reference [ 
+           NUMBER with value 2
+          ] end array 
+          IDENTIFIER b 
+   BLOCK STATEMENT  
+    Variable INT  x[10]
+    ASSIGNMENT STATEMENT 
+     IDENTIFIER x 
+     array reference [ 
+      EXPR  - 
+       EXPR  + 
+        NUMBER with value 2
+        NUMBER with value 3
+       NUMBER with value 5
+     ] end array 
+     EXPR  + 
+      IDENTIFIER b 
+      CALL: f 
+       ARGLIST 
+        EXPR  + 
+         NUMBER with value 5
+         EXPR  * 
+          IDENTIFIER x 
+          array reference [ 
+           NUMBER with value 2
+          ] end array 
+          IDENTIFIER b 
+Variable INT  z
+INT FUNCTION 
+( 
+  PARAMETER  INT  arg1 
+  PARAMETER  INT  arg2 
+) 
+  BLOCK STATEMENT  
+   WRITE STATEMENT
+    CALL: f 
+     ARGLIST 
+      EXPR  + 
+       EXPR  - 
+        EXPR  + 
+         IDENTIFIER arg1 
+         IDENTIFIER arg2 
+         array reference [ 
+          EXPR  + 
+           NUMBER with value 3
+           NUMBER with value 5
+         ] end array 
+        IDENTIFIER z 
+       IDENTIFIER y 
+   WRITE STATEMENT
+    CALL: f 
+     ARGLIST 
+      EXPR  + 
+       EXPR  - 
+        EXPR  + 
+         IDENTIFIER arg1 
+         IDENTIFIER arg2 
+         array reference [ 
+          EXPR  + 
+           NUMBER with value 3
+           NUMBER with value 5
+         ] end array 
+        IDENTIFIER z 
+       IDENTIFIER y 
